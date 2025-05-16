@@ -1,0 +1,141 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MPBSE 10th Result 2025</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 95%;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2, h3 {
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid #999;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    .input-section {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .input-section input, .input-section select {
+      padding: 8px;
+      font-size: 16px;
+    }
+    .input-section button {
+      padding: 10px;
+      font-size: 16px;
+      background-color: orange;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+    .result-section {
+      display: none;
+      margin-top: 20px;
+    }
+    .note {
+      font-size: 13px;
+      margin-top: 20px;
+    }
+    .print-btn {
+      margin-top: 20px;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    img.logo {
+      width: 60px;
+      display: block;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://raw.githubusercontent.com/Abhisheknayak16/10th-result-/main/images%20(2).jpeg" alt="Logo" class="logo">
+    <h2>BOARD OF SECONDARY EDUCATION, MADHYA PRADESH</h2>
+    <h3>High School Certificate Examination (HSC) Result 2025</h3><div class="input-section">
+  <input type="text" id="roll" placeholder="Roll Number">
+  <input type="text" id="app" placeholder="Application Number">
+  <select id="examType">
+    <option>Main</option>
+    <option>Supplementary</option>
+  </select>
+  <input type="text" id="captcha" placeholder="Enter Captcha: G7ght">
+  <button onclick="showResult()">Submit</button>
+</div>
+
+<div class="result-section" id="result">
+  <h3>Result</h3>
+  <p><strong>Roll No:</strong> 154231508 | <strong>Application No:</strong> 14203116</p>
+  <p><strong>Name:</strong> ABHISHEK | <strong>DOB:</strong> 23/01/2010</p>
+  <p><strong>Father's Name:</strong> SURAJMAL | <strong>Mother's Name:</strong> RANI BAI</p>
+  <p><strong>School Code:</strong> 421081 | <strong>Centre Code:</strong> 421039</p>
+  <p><strong>Enrollment No.:</strong> A23/421081/003 | <strong>Status:</strong> PRIVATE</p>
+
+  <table>
+    <tr><th>Subject</th><th>Theory</th><th>Practical/Internal</th><th>Total</th><th>Remarks</th></tr>
+    <tr><td>Hindi</td><td>55</td><td>20</td><td>75</td><td></td></tr>
+    <tr><td>English</td><td>68</td><td>22</td><td>90</td><td>DISTN</td></tr>
+    <tr><td>Sanskrit</td><td>50</td><td>20</td><td>70</td><td></td></tr>
+    <tr><td>Mathematics</td><td>24</td><td>15</td><td>39</td><td>#</td></tr>
+    <tr><td>Science</td><td>38</td><td>17</td><td>55</td><td></td></tr>
+    <tr><td>Social Science</td><td>67</td><td>20</td><td>87</td><td></td></tr>
+    <tr><th colspan="3">Total</th><td>377</td><td>75.4% A+</td></tr>
+  </table>
+
+  <p><strong>Result:</strong> PASS IN FIRST DIVISION</p>
+  <p>Participated in NCC 'A' Certificate Course and obtained Grade: XX<br>
+    Environmental Education & Disaster Management: A<br>
+    Awarded Bonus Marks For Participation in State/National/International Level Games: XX</p>
+
+  <div class="note">
+    The result has been declared on the basis of 'best of five' rule.<br>
+    Students may apply online for re-totaling or answer sheet copy within 10 days of result declaration (06/05/2025).
+  </div>
+
+  <button class="print-btn" onclick="window.print()">Download / Print</button>
+</div>
+
+  </div>  <script>
+    function showResult() {
+      const roll = document.getElementById("roll").value;
+      const app = document.getElementById("app").value;
+      const cap = document.getElementById("captcha").value;
+
+      if (roll === "154231508" && app === "14203116" && cap.toLowerCase() === "g7ght") {
+        document.getElementById("result").style.display = "block";
+        document.getElementById("roll").value = "";
+        document.getElementById("app").value = "";
+        document.getElementById("captcha").value = "";
+      } else {
+        alert("Invalid credentials or captcha!");
+      }
+    }
+  </script></body>
+</html>
